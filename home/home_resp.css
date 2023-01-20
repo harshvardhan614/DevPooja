@@ -58,6 +58,20 @@
 
 
 @media (max-width:770px) {
+    .title h2{
+        font-size: 40px;
+    }
+    .title i {
+        font-size: 70px;
+    }
+
+    .title h2::after{
+        right: -16%;
+    }
+
+    .title h2::before{
+        left: -16%;
+    }
     /* upper-nav part  */
     #upper-nav{
         justify-content: center;
@@ -97,6 +111,23 @@
   }
 
 @media (max-width:470px) {
+
+    .title h2{
+        font-size: 30px;
+    }
+    .title i {
+        font-size: 64px;
+    }
+
+    .title h2::after{
+        right: -21%;
+        /* width: 30px; */
+    }
+
+    .title h2::before{
+        left: -20%;
+        /* width: 30px; */
+    }
 
     /* footer part  */
     #footer .footer-content{
