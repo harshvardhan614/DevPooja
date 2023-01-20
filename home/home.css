@@ -3,6 +3,10 @@
 /* font-family: 'Poppins', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&display=swap');
 /* font-family: 'Jost', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+/* font-family: 'Cinzel Decorative', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+/* font-family: 'Roboto Slab', serif; */
 
 /* global css */
 *{
@@ -21,8 +25,58 @@
 }
 
 .section-mp {
-    margin: 40px auto;
-    padding: 40px 3rem;
+    margin: 40px 0;
+}
+
+.title-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  margin: 20px auto;
+  position: relative;
+  background-color: white;
+  display: inline-block;
+}
+
+.title h2{
+  /* font-family: 'Cinzel Decorative', sans-serif;  */
+  font-family: Amita;
+font-size: 44px;
+font-weight: 700;
+text-align: center;
+color: #FC6C03;
+position: relative;
+}
+
+.title h2::before{
+  content: " ";
+  height: 4px;
+  width: 45px;
+  background-color: #FC6C03;
+  position: absolute;
+  top: 50%;
+  left: -13%;
+}
+
+.title h2::after{
+  content: " ";
+  height: 4px;
+  width: 45px;
+  background-color: #FC6C03;
+  position: absolute;
+  top: 50%;
+  right: -13%;
+}
+
+.title i{
+  font-size: 80px;
+  color: rgba(252, 108, 3, 0.4);
+  position: absolute;
+  top: -30px;
+  left: 40%;
 }
 
 /* Upper nav part  */
@@ -162,7 +216,6 @@
     width: 100%;
     height: 90vh;
     margin-bottom: 40px;
-    background-color: #1a1a1a;
     position: relative;    
 }
 
@@ -177,109 +230,80 @@
     overflow: hidden;
     border-radius: 25px;
   }
-  .card{
+  #pooja .card{
+    width: 330px;
+    height: 420px;
     border-radius: 25px;
-    background-color: #FFF;
+    background-color: #DE5C28;
   }
-  .image-content,
-  .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-  }
-  .image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-  }
-  .overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+  
+  #pooja .image-content{
     width: 100%;
-    background-color: #4070F4;
-    border-radius: 25px 25px 0 25px;
-  }
-  .overlay::before,
-  .overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #4070F4;
-  }
-  .overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-  }
-  .card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
-  }
-  .card-image .card-img{
+    height: 200px;  
+  } 
+  #pooja .image-content .card-img{    
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #4070F4;
   }
+
+  #pooja .card-content{
+    padding: 20px;
+  }
+
+  #pooja .card-content  .same{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+  }
+  
   .name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+font-size: 20px;
+font-weight: 700;
+/* line-height: 30px; */
+color: #1a1a1a;
   }
+
   .description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
+    font-size: 16px;
+    color: #fff;
   }
+
   .button{
     border: none;
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
-    color: #FFF;
+    color: #DE5C28;
     padding: 8px 16px;
-    background-color: #4070F4;
+    background-color: white;
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button:hover{
-    background: #265DF2;
-  }
+  
   
   .swiper-navBtn{
-    color: #6E93f7;
+    color: #F83C00;
+    font-weight: 600;
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover{
-    color: #4070F4;
+    transform: scale(1.1);
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after{
     font-size: 35px;
   }
   .swiper-button-next{
-    right: 0;
+    right: 10px;
   }
   .swiper-button-prev{
-    left: 0;
+    left: 10px;
   }
-  .swiper-pagination-bullet{
-    background-color: #6E93f7;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    background-color: #4070F4;
-  }
+  
   
 /* footer part  */
 #footer{
