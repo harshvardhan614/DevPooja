@@ -99,6 +99,32 @@
       </div>
 </section>
 
+ <!-- about section start  -->
+    <section class="about" id="about">
+      <div class="max-width">       
+        <div class="about-content">
+          <div class="column left">
+            <div class="img"></div>
+          </div>
+          <div class="column right">
+            <div class="title-box">
+              <div class="title">
+                <h2>VISION</h2>
+                <i class="fa-solid fa-om"></i>
+              </div>
+            </div>
+            <div class="head">
+              To promote Hindu Vedic culture and encourage people to participate in Vedic activities, thereby assisting in every individuals comprehensive development.
+            </div>
+            <p>
+              Our endeavor is to perform group Puja, Havan, Mantra Jap, Navagraha Shanti for Devotees, on Devotee's behalf, at a reasonable charge, thereby becoming a Centre for Satvik Vedic Pooja.
+            </p>
+            <button class="more">See Temples</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <!-- upcoming pooja section  -->
 <section id="pooja" class="max-width section-mp">
   <div class="title-box">
@@ -189,7 +215,28 @@
 
 <!-- benefits section  -->
 <section id="benefits" class="max-width section-mp">
-
+  <div class="title-box">
+    <div class="title">
+      <h2>Benefits Of Joining <br> our Events</h2>
+    </div>    
+  </div>
+  <p class="data">
+    To promote Hindu Vedic culture and encourage people to participate in Vedic activities thereby assisting in every individual's comphrensive development.
+  </p>
+  <div class="cards">
+    <div class="card card-1">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="card card-2">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="card card-3">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="card card-4">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
 </section>
 
 <!-- accociated temple section  -->
@@ -204,7 +251,7 @@
     <div class="owl-carousel owl-theme ">
       <div class="item">
         <img src="data/home_Data/temple/1.jpg" alt="no img">
-        <h3>Tapkeshwar Temple/h3>
+        <h3>Tapkeshwar Temple</h3>
         <p>Dehradun</p>
         <button class="more">Know More</button>
       </div>
@@ -283,8 +330,28 @@
    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 
    <script>
-    //  Initialize Swiper
+    // Navigation Bar
+const bar = document.getElementById("bar");
+const navbar = document.getElementById("navbar");
+const close = document.getElementById("close");
 
+if (bar) {
+  bar.addEventListener("click", () => {
+    navbar.classList.add("active");
+  });
+}
+
+if (close) {
+  close.addEventListener("click", () => {
+    navbar.classList.remove("active");
+  });
+}
+
+$(".menu-bar").click(function () {
+  navbar.classList.remove("active");
+});
+
+    //  Initialize Swiper
 const swiper_1 = new Swiper('.swiper-1', {
   // Optional parameters  
   autoplay:{
@@ -348,7 +415,7 @@ const swiper_1 = new Swiper('.swiper-1', {
    </script>
 
   <!-- script tag  -->
-  <script src="home/home_script.js"></script>
+  <!-- <script src="home/home_script.js"></script> -->
     
 </body>
 </html>
