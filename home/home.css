@@ -151,10 +151,21 @@ position: relative;
     z-index: 999;
 }
 
-#header .logo-box img {
-    height: 90px;
-    max-width: 100%;
+#header .logo-box{
+  display: flex;
+  align-items: center;
+}
 
+#header .logo-box img {
+  height: 90px;
+  max-width: 100%;
+  margin-right : 10px;
+}
+
+#header .logo-box .sub{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .navbar {
