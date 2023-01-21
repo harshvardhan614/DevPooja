@@ -117,6 +117,10 @@
         width: 90%;
     }
 
+    #benefits .data {        
+        width: 80%;
+    }
+
     /* footer part  */
     #footer .footer-content .data{
         width: 80%;
@@ -191,6 +195,10 @@
     #about .about-content .column .img::before{
         height: 0;
         width: 0;
+    }
+    /* benefits section  */
+    #benefits .data {
+        width: 90%;
     }
 
     /* footer part  */
