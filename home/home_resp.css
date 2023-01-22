@@ -146,6 +146,11 @@
   }
 
 @media (max-width:470px) {
+
+    .section-mp {
+        margin: 20px 0;
+    }
+
     #header{
         padding: 2px 15px;
     }
@@ -180,18 +185,23 @@
         padding-left: 15px;
     }
 
+    #home-slider {
+        height: 80vh;
+        margin-bottom: 30px;
+    }
+
       
     #about {
         margin: 40px 20px;
     }
     #about .about-content .left {
         width: 100%;
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     #about .about-content .column .img{
         height: 350px;
-        width: 260px ;
+        width: 270px ;
     }
     #about .about-content .right {    
         width: 100%;
@@ -213,6 +223,9 @@
     #benefits .data {
         width: 90%;
     }
+    #benefits .cards .card{
+        margin: 20px 0;
+    }
 
     /* footer part  */
     #footer .footer-content{
@@ -233,6 +246,9 @@
         align-items: flex-start;
     } */
 
+    .copyright{
+        justify-content: center;
+    }
     .copyright p{
     font-size: 13px;
 }
