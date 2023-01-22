@@ -158,7 +158,7 @@
         font-size: 22px;
       }
     .title h2{
-        font-size: 30px;
+        font-size: 28px;
     }
     .title i {
         font-size: 64px;
@@ -166,12 +166,12 @@
 
     .title h2::after{
         right: -21%;
-        /* width: 30px; */
+        width: 30px;
     }
 
     .title h2::before{
         left: -20%;
-        /* width: 30px; */
+        width: 30px;
     }
     #header .logo-box img {
         height: 80px;
@@ -193,6 +193,9 @@
       
     #about {
         margin: 40px 20px;
+    }
+    #about .about-content{
+        padding: 60px 0;
     }
     #about .about-content .left {
         width: 100%;
@@ -218,6 +221,11 @@
     #about .about-content .column .img::before{
         height: 0;
         width: 0;
+    }
+
+    #pooja .card {
+        width: 280px;
+        height: 430px;
     }
     /* benefits section  */
     #benefits .data {
