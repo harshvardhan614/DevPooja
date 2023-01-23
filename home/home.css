@@ -215,7 +215,8 @@ position: relative;
 /* howm carousel part  */
 
 #home-slider{
-    width: 100%;
+    width: 90%;
+    max-width: 1300px;    
     height: 100vh;
     margin-bottom: 40px;
     background-color: #1a1a1a;
@@ -264,27 +265,27 @@ position: relative;
  #about .about-content{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 100px 0;
 }
 
-#about .about-content .left {
+/* #about .about-content .left {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-#about .about-content .column .img{
+/* #about .about-content .column .img{
   background: url("../data/home_data/about/about-main.jpg") no-repeat center;
   height: 400px;
   width: 300px ;
   background-size: cover;
   position: relative;
   z-index: 4;
-}
+} */
 
-#about .column .img::after{
+/* #about .column .img::after{
   content: " ";
   background: url("../data/home_data/about/about-down.jpg") center;
   height: 200px;
@@ -295,9 +296,9 @@ position: relative;
   right: -30%;
   bottom: -15%;
   z-index: -4;
-}
+} */
 
-#about .column .img::before {
+/* #about .column .img::before {
   content: " ";
   background: url("../data/home_data/about/about-up.jpg") center;
   height: 180px;
@@ -308,7 +309,7 @@ position: relative;
   top: -15%;
   left: -20%;
   z-index: -6;
-}
+} */
 
 
 #about .about-content .right{
@@ -325,7 +326,7 @@ position: relative;
   font-style: italic;
   font-weight: 500;
   line-height: 30px;
-  text-align: justify;
+  text-align: center;
   padding: 10px 0;
 }
 
