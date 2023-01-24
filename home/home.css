@@ -27,12 +27,12 @@ body {
 
 .max-width {
   width: 100%;
-  max-width: 1366px;
+  /* max-width: 1366px; */
   margin: 0 auto;
 }
 
 .section-mp {
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 .title-box {
@@ -375,10 +375,14 @@ body {
   padding: 10px 0;
 }
 
-#about .more {
+/* #about .more {
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 30px;
+} */
+#about .about-content .right img{
+  width: 60%;
+  max-width: 500px;
 }
 
 /* Pooja section    */
@@ -391,7 +395,7 @@ body {
 
 
 .slide-container {
-  max-width: 1180px;
+  max-width: 2600px;
   width: 100%;
   padding: 40px 0;
 }
@@ -406,14 +410,14 @@ body {
   /* width: 330px; */
   display: flex;
   align-items: flex-start;
-  height: 350px;
+  height: 380px;
   border-radius: 25px;
   background-color: #DE5C28;
 }
 
 #pooja .image-content {
   width: 550px;
-  height: 350px;
+  height: 380px;
 }
 
 #pooja .image-content .card-img {
@@ -609,7 +613,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* background: linear-gradient(0deg, rgba(33, 41, 49, 0.65), rgba(33, 41, 49, 0.65)), url("../data/home_data/footer-bg.svg"); */
-  background: url("../data/home_data/footer-bg-new.svg");
+  background: url("../data/home_data/footer-latest.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
