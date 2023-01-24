@@ -109,7 +109,7 @@
     <div class="logo-box">
       <a href="#">
         <img src="data/home_data/main-logo.png" alt="no img" />
-      </a>      
+      </a>
     </div>
 
     <div>
@@ -129,7 +129,7 @@
       <i id="bar" class="fa-solid fa-bars"></i>
     </div>
   </section>
-  
+
   <!-- about section start  -->
   <section class="about" id="about">
     <div class="max-width">
@@ -147,7 +147,7 @@
           <div class="head">
             To promote Hindu Vedic culture and encourage people to participate in Vedic activities, thereby assisting in
             every individuals comprehensive development.
-          </div>          
+          </div>
           <button class="more">See Temples</button>
         </div>
         <div class="column right">
@@ -158,17 +158,17 @@
             </div>
           </div>
           <div class="head">
-            Our endeavor is to perform group Puja, Havan, Mantra Jap, Navagraha Shanti for Devotees, on Devotee's
+            Our endeavor is to perform group Pooja, Havan, Mantra Jap, Navagraha Shanti for Devotees, on Devotee's
             behalf, at a reasonable charge, thereby becoming a Centre for Satvik Vedic Pooja.
-          </div>          
+          </div>
           <button class="more">See Pooja List</button>
-        </div>        
+        </div>
       </div>
     </div>
   </section>
 
-   <!-- Home main Carousel section  -->
-   <section id="home-slider" class="max-width">
+  <!-- Home main Carousel section  -->
+  <section id="home-slider" class="max-width">
     <!-- Swiper -->
     <div class="swiper mySwiper swiper-1">
       <div class="swiper-wrapper">
@@ -197,11 +197,11 @@
   </section>
 
 
-   <!-- upcoming pooja section  -->
+  <!-- upcoming pooja section  -->
   <section id="pooja" class="max-width section-mp">
     <div class="title-box">
       <div class="title">
-        <h2>Upcoming Pooja's</h2>
+        <h2>Upcoming Poojas</h2>
         <i class="fa-solid fa-om"></i>
       </div>
     </div>
@@ -261,7 +261,7 @@
               <button class="button">Participate Now</button>
             </div>
           </div>
-         
+
 
         </div>
       </div>
@@ -285,17 +285,22 @@
       individual's comphrensive development.
     </p>
     <div class="cards">
-      <div class="card card-1">
+      <!-- <div class="card card-1">
         <p>Add Why perform Pooja through DevPoojan.in</p>
         <h6>Pooja charges includes Pooja Samagri (Material) cost, Pandit Dakshina, Temple's official fee, Prasad, and shipping charges across India and other administrative costs.</h6>
-      </div>
+      </div> -->
       <div class="card card-2">
         <p>Benefits of Participating in Poojas</p>
-        <h6>When an individual performs Pooja, positive vibrations of spiritual forces are generated around the individual and one’s mind is filled with cosmic energy and thoughts. It is also believed that these divine forces remove negative energy or harmful influences from our life and bring harmony and prosperity.</h6>
+        <h6>When an individual performs Pooja, positive vibrations of spiritual forces are generated around the
+          individual and one’s mind is filled with cosmic energy and thoughts. It is also believed that these divine
+          forces remove negative energy or harmful influences from our life and bring harmony and prosperity.</h6>
       </div>
       <div class="card card-3">
         <p>Why participate in Pooja through DevPoojan?</p>
-        <h6>Vedas describes that, Devotees should host the Priest (Panditji) and perform Pooja through Panditji, so that he could make requests (Sankalpam) to the Gods, on behalf of Devotees. In today’s era, not everyone has time to make preparation for Pooja nor people know who are expert or scholar Panditji.DevPoojan.in is a medium that offers Pooja services to devotees and help in your overall development </h6>
+        <h6>Vedas describes that, Devotees should host the Priest (Panditji) and perform Pooja through Panditji, so that
+          he could make requests (Sankalpam) to the Gods, on behalf of Devotees. In today’s era, not everyone has time
+          to make preparation for Pooja nor people know who are expert or scholar Panditji.DevPoojan.in is a medium that
+          offers Pooja services to devotees and help in your overall development. </h6>
       </div>
       <!-- <div class="card card-4">
         <p>Arrival of dieties and blessings to yajman</p>
@@ -370,7 +375,7 @@
       <div class="link">
         <a target="_blank" href="#">Home</a>
         <a href="#">About Us</a>
-        <a href="#">Join Puja</a>
+        <a href="#">Join Pooja</a>
         <a href="#">Our Blogs</a>
       </div>
       <div class="link">
@@ -378,6 +383,13 @@
         <a href="#">Terms and Conditions</a>
         <a href="#">Return and Refund Policy</a>
         <a href="#">Contact Us</a>
+      </div>
+      <div class="data1">
+        Disclaimer - DevPoojan.in is NOT an official website of any Temple or Temple trust. However, we have Panditjis
+        (Priests) at temples in various cities, they perform Pooja on behalf of Devotee/Yajman (Participants). Pooja
+        charges includes Pooja Samagri (Material) cost, Pandit Dakshina, Temple's official fee, Prasad, and
+        shipping
+        charges across India and other administrative costs.
       </div>
     </div>
   </section>
@@ -434,19 +446,19 @@
 
     // scroll button
     $(document).ready(function () {
-  $(window).scroll(function () {    
-    if (this.scrollY > 400) {
-      $(".scroll-up-btn").addClass("show");
-    } else {
-      $(".scroll-up-btn").removeClass("show");
-    }
-  });
-});
-// slide up button 
- //slide-up script
- $('.scroll-up-btn').click(function(){
-  $('html').animate({scrollTop:0});
-});
+      $(window).scroll(function () {
+        if (this.scrollY > 400) {
+          $(".scroll-up-btn").addClass("show");
+        } else {
+          $(".scroll-up-btn").removeClass("show");
+        }
+      });
+    });
+    // slide up button 
+    //slide-up script
+    $('.scroll-up-btn').click(function () {
+      $('html').animate({ scrollTop: 0 });
+    });
 
     // pooja section 
     var swiper_content = new Swiper(".slide-content", {
