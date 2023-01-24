@@ -99,6 +99,36 @@ position: relative;
  transition: all 0.3s ease;
 }
 
+.scroll-up-btn {
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn img {  
+  z-index: 999;
+  height: 60px;
+  width: 60px;
+  transition: 0.5s ease;
+}
+
+.scroll-up-btn img:hover {
+  transform: scale(1.1);
+}
+
+.scroll-up-btn.show {
+  display: initial;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 /* Upper nav part  */
 #upper-nav {
     display: flex;
@@ -219,7 +249,7 @@ position: relative;
     max-width: 1300px;    
     height: 100vh;
     max-height: 800px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background-color: #1a1a1a;
     position: relative;
 }
@@ -267,7 +297,7 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 /* #about .about-content .left {
@@ -365,15 +395,18 @@ padding: 10px 0;
   }
   #pooja .card{
     /* width: 330px; */
-    height: 420px;
+    display: flex;
+    align-items: flex-start;
+    height: 350px;
     border-radius: 25px;
     background-color: #DE5C28;
   }
   
   #pooja .image-content{
-    width: 100%;
-    height: 200px;  
+    width: 550px;
+    height: 350px;
   } 
+
   #pooja .image-content .card-img{    
     height: 100%;
     width: 100%;
@@ -381,39 +414,44 @@ padding: 10px 0;
   }
 
   #pooja .card-content{
-    padding: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 
   #pooja .card-content  .same{
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.06em;
   }
   
   .name{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 700;
     /* line-height: 30px; */
     color: #1a1a1a;
   }
 
   .description{
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
+    margin: 10px 0;
   }
 
   .button{
     border: none;
     font-family: 'Roboto Slab', serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     color: #DE5C28;
     padding: 8px 16px;
     background-color: white;
     border-radius: 6px;
-    margin: 14px 0;
+    margin: 20px 0;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -466,17 +504,18 @@ padding: 10px 0;
 }
 
 #benefits .cards .card{
-  background:linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(252, 75, 3, 0.2) 69.59%, rgba(252, 75, 3, 0.2) 100%),
-             url("../data/home_data/benefits/1.jpg") no-repeat center;
-  background-size: cover;
-  height: 320px;
-  width: 260px;
+  /* background:linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(252, 75, 3, 0.2) 69.59%, rgba(252, 75, 3, 0.2) 100%), */
+             /* url("../data/home_data/benefits/1.jpg") no-repeat center; */
+  /* background-size: cover; */
+  background: linear-gradient(90deg, #FC6C03, #F83C00);
+  height: 350px;
+  width: 400px;
   margin: 20px;
   padding: 15px;
   position: relative;
 }
 
-#benefits .cards .card:nth-child(2){
+/* #benefits .cards .card:nth-child(2){
   background:linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(252, 75, 3, 0.2) 69.59%, rgba(252, 75, 3, 0.2) 100%), url("../data/home_data/benefits/2.jpg") no-repeat ;
   background-size: cover;
 }
@@ -487,14 +526,21 @@ padding: 10px 0;
 #benefits .cards .card:nth-child(4){
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(252, 75, 3, 0.2) 69.59%, rgba(252, 75, 3, 0.2) 100%),url("../data/home_data/benefits/4.jpg") no-repeat center;
   background-size: cover;
-}
+} */
 
 #benefits .cards .card p{
-  position: absolute;
-  bottom: 20px;
+  /* position: absolute;
+  bottom: 20px; */
   color: white;
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#benefits .cards .card h6{
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 

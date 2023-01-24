@@ -80,6 +80,11 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- scroll whatsapp btn  -->
+  <div class="scroll-up-btn show">
+    <img src="data/home_data/whatsapp-logo.svg" alt="no img">
+  </div>
+
   <!-- upperNav section  -->
   <section id="upper-nav" class="max-width">
     <div class="left text">
@@ -113,7 +118,7 @@
         <li><a class="menu-bar" href="#">Pooja</a></li>
         <li><a class="menu-bar" href="#">About Us</a></li>
         <li><a class="menu-bar" href="#">Blogs</a></li>
-        <!-- <li><a class="menu-bar" href="#">Our Team</a></li> -->
+        <li><a class="menu-bar" href="#">Previous Pooja</a></li>
         <li><a class="menu-bar" href="#">Contact Us</a></li>
 
         <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -124,7 +129,7 @@
       <i id="bar" class="fa-solid fa-bars"></i>
     </div>
   </section>
-
+  
   <!-- about section start  -->
   <section class="about" id="about">
     <div class="max-width">
@@ -161,6 +166,36 @@
       </div>
     </div>
   </section>
+
+   <!-- Home main Carousel section  -->
+   <section id="home-slider" class="max-width">
+    <!-- Swiper -->
+    <div class="swiper mySwiper swiper-1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="data/home_data/carousel-image/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="data/home_data/carousel-image/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="data/home_data/carousel-image/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="data/home_data/carousel-image/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="data/home_data/carousel-image/5.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+
+    </div>
+  </section>
+
 
    <!-- upcoming pooja section  -->
   <section id="pooja" class="max-width section-mp">
@@ -242,7 +277,7 @@
   <section id="benefits" class="max-width section-mp">
     <div class="title-box">
       <div class="title">
-        <h2>Benefits Of Joining <br> our Events</h2>
+        <h2>Benefits Of Participating <br>in Poojas</h2>
       </div>
     </div>
     <p class="data">
@@ -251,49 +286,22 @@
     </p>
     <div class="cards">
       <div class="card card-1">
-        <p>Financial capability and good planning.</p>
+        <p>Add Why perform Pooja through DevPoojan.in</p>
+        <h6>Pooja charges includes Pooja Samagri (Material) cost, Pandit Dakshina, Temple's official fee, Prasad, and shipping charges across India and other administrative costs.</h6>
       </div>
       <div class="card card-2">
-        <p>Purity in relation to the mind and body</p>
+        <p>Benefits of Participating in Poojas</p>
+        <h6>When an individual performs Pooja, positive vibrations of spiritual forces are generated around the individual and one’s mind is filled with cosmic energy and thoughts. It is also believed that these divine forces remove negative energy or harmful influences from our life and bring harmony and prosperity.</h6>
       </div>
       <div class="card card-3">
-        <p>Generation of pleasant feeling</p>
+        <p>Why participate in Pooja through DevPoojan?</p>
+        <h6>Vedas describes that, Devotees should host the Priest (Panditji) and perform Pooja through Panditji, so that he could make requests (Sankalpam) to the Gods, on behalf of Devotees. In today’s era, not everyone has time to make preparation for Pooja nor people know who are expert or scholar Panditji.DevPoojan.in is a medium that offers Pooja services to devotees and help in your overall development </h6>
       </div>
-      <div class="card card-4">
+      <!-- <div class="card card-4">
         <p>Arrival of dieties and blessings to yajman</p>
-      </div>
+      </div> -->
     </div>
   </section>
-
-   <!-- Home main Carousel section  -->
-   <section id="home-slider" class="max-width">
-    <!-- Swiper -->
-    <div class="swiper mySwiper swiper-1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="data/home_data/carousel-image/1.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="data/home_data/carousel-image/2.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="data/home_data/carousel-image/3.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="data/home_data/carousel-image/4.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="data/home_data/carousel-image/5.jpg" alt="">
-        </div>
-      </div>
-
-      <!-- If we need pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
-
-
-    </div>
-  </section>
-
 
   <!-- accociated temple section  -->
   <!-- <section id="associated" class="max-width section-mp">
@@ -407,6 +415,7 @@
       });
     }
 
+    // menu-bar code 
     $(".menu-bar").click(function () {
       navbar.classList.remove("active");
     });
@@ -422,6 +431,22 @@
 
 
     });
+
+    // scroll button
+    $(document).ready(function () {
+  $(window).scroll(function () {    
+    if (this.scrollY > 400) {
+      $(".scroll-up-btn").addClass("show");
+    } else {
+      $(".scroll-up-btn").removeClass("show");
+    }
+  });
+});
+// slide up button 
+ //slide-up script
+ $('.scroll-up-btn').click(function(){
+  $('html').animate({scrollTop:0});
+});
 
     // pooja section 
     var swiper_content = new Swiper(".slide-content", {
@@ -452,8 +477,8 @@
         520: {
           slidesPerView: 2,
         },
-        1000: {
-          slidesPerView: 2,
+        920: {
+          slidesPerView: 1,
         },
       },
     });
